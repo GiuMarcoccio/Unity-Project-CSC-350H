@@ -11,10 +11,11 @@ public class PlayerCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collesionInfo)
     {
-        if (collesionInfo.collider.tag == "Obstacles")
+        if (collesionInfo.collider.tag == "Obstacle")
         {
             Debug.Log("We hit an obstacle!");
             movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
         }   
     }
 

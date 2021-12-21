@@ -13,7 +13,7 @@ public class ScoreCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(score);
+        //Debug.Log(score);
         gameObject.GetComponent<Text>().text = "Score:\t" + score;
     }
 }
